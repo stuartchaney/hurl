@@ -11,7 +11,8 @@ class WebhooksController < ApplicationController
 
     puts "HERE IS THE EVENT TYPE"
 
-    puts params[:json]["event"]
+    puts params[:json]
+    puts params[:json][0]
 
 		#puts "under here"
 		#puts body.to_json
