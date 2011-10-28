@@ -9,6 +9,10 @@ class WebhooksController < ApplicationController
 		puts body.class
 		puts body.inspect
 
+    puts "HERE IS THE EVENT TYPE"
+
+    puts params[:json]["event"]
+
 		#puts "under here"
 		#puts body.to_json
 		#puts "TESTIN"
