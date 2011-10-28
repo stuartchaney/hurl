@@ -4,7 +4,7 @@ class WebhooksController < ApplicationController
   
   #POST
   def create
-	 	body = params.except(:action, :controller).first.first
+	 	body = params.except(:action, :controller)
 		#parsed_body = body.to_json
 		puts body.class
 		puts body.inspect
